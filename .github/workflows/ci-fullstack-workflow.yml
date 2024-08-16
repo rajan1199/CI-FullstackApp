@@ -29,10 +29,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-     
-      # Install the dependencies.
-      - name: 'npm install'
-        run: npm install
         
       # Install the dependencies.
       - name: 'Install the dependencies'
@@ -44,8 +40,8 @@ jobs:
 
       # Run the linter.
       - name: 'Run the linter'
-        # run: cd backend && pwd
-        run: cd backend && npm run lint
+        run: cd backend && pwd
+        # run: cd backend && npm run lint
 
       # Send a console message at completion.
       - name: 'Send a console message at completion'
