@@ -1,4 +1,4 @@
-{
+module.exports = {
   ignorePatterns: ['build/', 'dist/', 'node_modules/'],
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   plugins: ['react', 'prettier'],
@@ -34,4 +34,4 @@
     'react/prop-types': process.env.FAIL_LINT ? 2 : 0,
     'react/jsx-uses-vars': 'warn',
   },
-}
+};
